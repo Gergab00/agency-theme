@@ -42,7 +42,6 @@ if ( ! function_exists( 'child_theme_scripts' ) ) {
         //Note move to plugin directory
 		wp_enqueue_script('flickity', get_stylesheet_directory_uri() . "/js/flickity.pkgd.min.js", array(), '2.2', true);
 		wp_enqueue_script('as-nav-for', get_stylesheet_directory_uri() . "/js/as-nav-for.js", array(), '3.0', true);
-
 } 
 
     add_action( 'wp_enqueue_scripts', 'child_theme_scripts' );

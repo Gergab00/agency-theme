@@ -2,11 +2,9 @@
 
 // 1. Include functions first (so you can manipulate colors, SVGs, calc, etc)
 @import "assets/bootstrap5/functions";
-@import "theme/child_theme_functions"; // Load your custom functions
 
 // 2. Include any default variable overrides here but first register your fonts that you will use in your awesome project
 // ! @see https: //getbootstrap.com/docs/5.2/customize/sass/#importing
-@import "theme/child_theme_fonts";      // Register your fonts
 @import "theme/child_theme_variables"; // <------- Add your variables into this file. Also add variables to overwrite Bootstrap variables here
 
 // 3. Include remainder of required Bootstrap stylesheets
@@ -61,14 +59,13 @@ $theme-colors: map-merge($theme-colors, $custom-colors);
 
 // 8. Add additional custom code here
 // Start bringing in colors and styles. 
-@import "assets/animate/animate";
 
 @import "assets/fontawesome6/fontawesome"; // <------- Font Awesome Icon font
 @import "assets/fontawesome6/brands.scss"; // <------- Font Awesome Icon font
 @import "assets/fontawesome6/regular.scss"; // <------- Font Awesome Icon font
 @import "assets/fontawesome6/solid.scss"; // <------- Font Awesome Icon font
-//@import "icomoon/icomoon.scss"; // <------- Custom Icomoon Icon font
 @import "theme/child_theme";
+@import "assets/flickity.scss";
 
 
 

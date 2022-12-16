@@ -2,13 +2,23 @@
 // To overwrite a Bootstrap variable you don´t have to touch the Bootstrap folder.
 // Just copy a variable from src/sass/assets/bootstrap5/_variables.scss, paste it here and edit the value.
 
-// ^ Esconde en Telefonos d-none d-md-block
-// ^ Esconde solamente en Tablet d-sm-block d-md-none d-lg-block
-// ^ Muestra solo en pantallas d-none d-md-none d-lg-block d-xl-block d-xxl-block
-// ^ Esconde en pantallas d-sm-block d-md-block d-lg-none d-xl-none d-xxl-none
-
 //Your custom colors
 $custom-color: #ffff;
+    
+    /* Font/text values */
+    $unnamed-font-style-normal: normal;
+    $unnamed-font-weight-bold: bold;
+    $unnamed-font-size-34: 34px;
+    $unnamed-font-size-54: 54px;
+    $unnamed-character-spacing-0: 0px;
+    $unnamed-line-spacing-42: 42px;
+    $unnamed-line-spacing-66: 66px;
+
+    $primary: #AEB1BF;
+    $secondary: #578BF2;
+    $info: #3C5FA6;
+    $dark: #0D0D0D;
+    $light: #484B59;
 
 // scss-docs-start custom-colors-map
 $custom-colors: (
@@ -20,104 +30,6 @@ $custom-colors: (
 $enable-shadows: true;
 $enable-gradients: true;
 $enable-negative-margins: true;
-
-$spacer-vw: 1vw;
-$spacers-vw: (
-    auto:auto,
-    try: $spacer-vw * 1,
-);
-
-$n: 0;
-$m: 0;
-
-/// @todo change the number 0 to the limit that you want to incresa the values
-@while $n <=0 {
-    $spacers-vw: map.set($spacers-vw, $n, $spacer-vw * $m);
-    $n: $n +1;
-    $m: $m +.1;
-} 
-
-$spacer: 1rem;
-$spacers: (
-    auto:auto,
-    try: $spacer * 1,
-);
-
-$n: 0;
-$m: 0;
-
-/// @todo change the number 0 to the limit that you want to incresa the values
-@while $n <=0 {
-    $spacers: map.set($spacers, $n, $spacer * $m);
-    $n: $n +2;
-    $m: $m +.125;
-}
-
-$sizing: 1%;
-$sizings: (
-    auto:auto,
-    try: $sizing * 1,
-);
-
-$n: 0;
-$m: 0;
-
-/// @todo change the number 0 to the limit that you want to incresa the values
-@while $n <=0 {
-    $sizings: map.set($sizings, $n, $sizing * $m);
-    $n: $n +1;
-    $m: $m +1;
-}
-
-$sizing-vw: 1vw;
-$sizings-vw: (
-    100: $sizing-vw * 100,
-    try: $sizing-vw * 1,
-);
-
-$n: 0;
-$m: 0;
-
-/// @todo change the number 0 to the limit that you want to incresa the values
-@while $n <=0 {
-    $sizings-vw: map.set($sizings-vw, $n, $sizing-vw * $m);
-    $n: $n +1;
-    $m: $m +1;
-}
-
-$sizing-vh: 1vh;
-$sizings-vh: (
-    100: $sizing-vh * 100,
-    try: $sizing-vh * 1,
-);
-
-$n: 0;
-$m: 0;
-
-/// @todo change the number 0 to the limit that you want to incresa the values
-@while $n <=0 {
-    $sizings-vh: map.set($sizings-vh, $n, $sizing-vh * $m);
-    $n: $n +1;
-    $m: $m +1;
-}
-
-// scss-docs-end spacer-variables-maps
-// Position
-// scss-docs-start position-map
-$position: 1%;
-$position-values: (
-    try: $position * 1
-);
-
-$n: 0;
-$m: 0;
-
-/// @todo change the number 0 to the limit that you want to incresa the values
-@while $n <=0 {
-    $position-values: map.set($position-values, $n, $position * $m);
-    $n: $n +1;
-    $m: $m +1;
-}
 
 // scss-docs-start grid-breakpoints
 $grid-breakpoints: (
@@ -133,14 +45,37 @@ $grid-breakpoints: (
 
 //Register your fonts and add them to the following map 
 //to create the bootstrap classes
+@font-face {
+    font-family: 'Montserrat', sans-serif;
+    src: url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap') format('woff2'),
+         url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap') format('woff');
+}
+
+$unnamed-font-family-montserrat: 'Montserrat', sans-serif;
+
 $fonts-family: (
-    monospace: monospace,
+    montserrat: $unnamed-font-family-montserrat,
 );
 
 $font-sizes: (
+    12:0.75rem,
     16: 1rem,
+    24: 1.5rem,
+    32: 2rem,
+    34: 2.125rem,
+    54: 3.375rem,
 );
 
 $line-heights: (
     16: 1rem,
+    40: 2.5rem,
 );
+
+$fa-font-path: "../fonts";
+
+$navbar-light-active-color: $secondary;
+
+$accordion-button-active-color: #000000;
+
+$accordion-button-icon:         url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512' fill='#{$info}'><path fill-rule='evenodd' d='M256 512c141.4 0 256-114.6 256-256S397.4 0 256 0S0 114.6 0 256S114.6 512 256 512zM232 344V280H168c-13.3 0-24-10.7-24-24s10.7-24 24-24h64V168c0-13.3 10.7-24 24-24s24 10.7 24 24v64h64c13.3 0 24 10.7 24 24s-10.7 24-24 24H280v64c0 13.3-10.7 24-24 24s-24-10.7-24-24z'/></svg>");
+$accordion-button-active-icon:  url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512' fill='#{$secondary}'><path fill-rule='evenodd' d='M256 512c141.4 0 256-114.6 256-256S397.4 0 256 0S0 114.6 0 256S114.6 512 256 512zM184 232H328c13.3 0 24 10.7 24 24s-10.7 24-24 24H184c-13.3 0-24-10.7-24-24s10.7-24 24-24z'/></svg>");

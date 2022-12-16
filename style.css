@@ -1,11 +1,11 @@
 /*
- Theme Name:   Understrap Framework Theme
+ Theme Name:   Agency Test
  Theme URI:    https://understrap.com
- Description:  Understrap child theme, modified to create a framework and develop child themes based on Understrap, with tools that help better ordering.
- Author:       the Understrap Contributors
+ Description:  Theme for the Agency, for the application of the position of Wordpress developer.
+ Author:       Gerardo Gabriel Gonzalez Velazquez
  Author URI:   https://github.com/Gergab00/understrap-framework-theme/graphs/contributors
  Template:     understrap
- Version:      1.1.0
+ Version:      1.0.0
  License: GNU General Public License v2 or later
  License URI: http://www.gnu.org/licenses/gpl-2.0.html
  Text Domain:  understrap-framework-theme
@@ -14,7 +14,7 @@
 
  Requires at least: 6.1
  Tested up to: 6.1
- Requires PHP: 7.4.26
+ Requires PHP: 7.0
 
  Understrap WordPress Theme, Gerardo Gabriel Gonzalez Velazquez
  Understrap Framework Theme is distributed under the terms of the GNU GPL.

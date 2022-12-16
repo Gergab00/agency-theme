@@ -11,4 +11,4 @@
  */
 //* Add the require function in here to registrer the block.
 
-require __DIR__.'/build/example-block/example-block.php';
+//require __DIR__.'/build/example-block/example-block.php';

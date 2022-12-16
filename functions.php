@@ -29,17 +29,15 @@ $understrapchild_inc_dir = 'inc/';
 $understrapchild_includes = array(
 	'safe-svg/safe-svg',					// Load save svg files
 	//'child-theme-settings',                  // Initialize theme default settings.
-	//'child-setup',                           // Theme setup and custom theme supports.
-	//'child-widgets',                         // Register widget area.
+	'child-setup',                           // Theme setup and custom theme supports.
+	'child-widgets',                         // Register widget area.
 	//'child-enqueue',                         // Enqueue scripts and styles.
-	//'child-template-tags',                   // Custom template tags for this theme.
+	'child-template-tags',                   // Custom template tags for this theme.
 	//'child-pagination',                      // Custom pagination for this theme.
 	//'child-hooks',                           // Custom hooks.
 	//'child-extras',                          // Custom functions that act independently of the theme templates.
 	'custom-controls',						 // Load custom-controls files
 	'child-customizer',                      // Customizer additions
-	'mx-metaboxes/mx-metaboxes',			 // Easy metaboxes create and set up
-	'mx-metaboxes/mx-metaboxes-examples',	 // Erase for remove the examples for the pages
 	//'child-custom-comments',                 // Custom Comments file.
 	'class-wp-bootstrap-navwalker',    // Load custom WordPress nav walker. Trying to get deeper navigation? Check out: https://github.com/understrap/understrap/issues/567.
 	//'child-editor',                          // Load Editor functions.															

@@ -18,11 +18,4 @@ async function copyDir(src, dest) {
 // Copy all Bootstrap SCSS files.
 copyDir('./node_modules/bootstrap/scss', './src/sass/assets/bootstrap5');
 // Copy all Font Awesome SCSS files.
-copyDir('./node_modules/font-awesome/scss', './src/sass/assets/fontawesome');
 copyDir('./node_modules/@fortawesome/fontawesome-free/scss', './src/sass/assets/fontawesome6');
-// Copy all Understrap SCSS files.
-copyDir('./node_modules/understrap/src/sass/theme', './src/sass/assets/understrap/theme');
-// Copy all Hover SCSS files
-copyDir('./node_modules/hover.css/scss', './src/sass/assets/hover');
-
-copyDir('./node_modules/animate.css', './src/sass/assets/animate');

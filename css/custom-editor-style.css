@@ -29385,4 +29385,13 @@ https://flickity.metafizzy.co
   background: #333333;
 }
 
-/*# sourceMappingURL=child-theme.css.map */
+.components-circular-option-picker__option {
+  border-radius: 50%;
+}
+
+.editor-post-title .editor-post-title__input {
+  font-size: 2.5rem;
+  font-weight: 500;
+}
+
+/*# sourceMappingURL=custom-editor-style.css.map */
