@@ -24,7 +24,7 @@ function formatPhoneNumber($number)
 
 function get_social_icons()
 {
-    $social_links = explode(',',get_option( '_social_links', []));
+    $social_links = explode(',',get_option( '_social_links', ""));
     $social_icons = array(
         'facebook'=>'fa-facebook-f',
         'twitter'=>'fa-twitter',
